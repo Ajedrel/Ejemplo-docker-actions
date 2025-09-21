@@ -1,0 +1,14 @@
+name: Ejemplo de tirada de dados con docker
+description: Ejemplo con docker y python
+inputs:
+  Numero-dados:
+    required: true
+    type: string
+    default: uno
+    description: Numero de dados
+outputs:
+  valores:
+    description: Valores obtenidos
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
